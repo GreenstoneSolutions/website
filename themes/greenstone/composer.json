@@ -1,0 +1,29 @@
+{
+    "name": "nydinum/greenstone",
+    "description": "The SilverStripe theme for Greenstone Solutions Ltd",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Nadeem A",
+            "homepage": "http://www.nadzweb.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.5"
+    },
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.2.x-dev"
+		},
+        "expose": [
+            "css",
+            "admin-css",
+            "images",
+            "javascript",
+            "webfonts"
+        ]
+	}
+}

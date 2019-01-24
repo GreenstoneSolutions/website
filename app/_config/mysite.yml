@@ -1,0 +1,13 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+Only:
+  environment: 'live'
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - GreenstoneSiteConfig
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - themes/greenstone/admin-css/GreenstoneCMS.css

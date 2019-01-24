@@ -1,0 +1,9 @@
+#Form_EditForm_IsActive_Holder {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#Form_EditForm_IsActive_Holder .form__field-holder.form-check {
+  margin-left: 20px;
+}

@@ -1,0 +1,9 @@
+---
+Name: greenstone
+---
+SilverStripe\Assets\Flysystem\AssetAdapter:
+  file_permissions:
+    file:
+      public: 0775
+    dir:
+      public: 0777

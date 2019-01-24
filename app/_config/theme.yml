@@ -1,0 +1,8 @@
+---
+Name: sitetheme
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - 'greenstone'
+    - '$default'
+    - '$public'
