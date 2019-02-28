@@ -46,18 +46,20 @@
       parent::init();
       // css
       Requirements::css('themes/greenstone/css/vendor.bundle.min.css');
-      if (Director::isDev()) {
-        Requirements::css('themes/greenstone/css/style.css');
-        Requirements::css('themes/greenstone/css/responsive.css');
-      } else {
-        Requirements::css('themes/greenstone/css/greenstone.min.css');
-      }
+      Requirements::combine_files('greenstone.min.css',
+        [
+          'themes/greenstone/css/style.css', 
+          'themes/greenstone/css/responsive.css'
+        ]
+      );
+      Requirements::process_combined_files();
 
       // javascript
       Requirements::javascript('themes/greenstone/javascript/vendor.bundle.min.js');
       Requirements::combine_files('gs.bundle.js',
         ['themes/greenstone/javascript/greenstone.js']
       );
+      Requirements::process_combined_files();
       Requirements::set_force_js_to_bottom(true);
     }
 
@@ -94,7 +96,8 @@
 
       $email = new Email(); 
       $email->setTo($config->EmailAddress); 
-      $email->setFrom($data['Email']); 
+      $email->setFrom('admin@greenstonsolutions.co.nz'); 
+      // $email->setFrom($data['Email']); 
       $email->setSubject("Contact Message from {$data["Name"]}"); 
 
       $messageBody = " 
