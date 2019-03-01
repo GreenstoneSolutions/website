@@ -30,17 +30,6 @@
   padding: 0 !important;
 }
 
-div#preloader {
-  background: #000 url("../images/loader.gif") no-repeat scroll center center;
-  height: 100%;
-  left: 0;
-  overflow: visible;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}
-
 .menu-area.navbar-fixed-top {
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
@@ -1476,7 +1465,7 @@ header {}
 /*How To*/
 
 .how-to-area {
-  background: rgba(0, 0, 0, 0) url("../images/how-work-bg.jpg") repeat scroll right center / contain;
+  background: rgba(0, 0, 0, 0) url("/resources/themes/greenstone/images/how-work-bg.jpg") repeat scroll right center / contain;
   padding: 55px 0 38px;
   position: relative;
 }
@@ -2924,7 +2913,7 @@ footer {}
 /*breadcumb*/
 
 .breadcumb-area {
-  background: rgba(0, 0, 0, 0) url("../images/gs-standard-bg-page.jpg") repeat fixed center center;
+  background: rgba(0, 0, 0, 0) url("/resources/themes/greenstone/images/gs-standard-bg-page.jpg") repeat fixed center center;
   padding: 50px 0 50px;
 }
 
