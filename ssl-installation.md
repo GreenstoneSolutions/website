@@ -10,8 +10,8 @@ sudo cat greenstone_digital.crt AddTrustExternalCARoot.crt USERTrustRSAAddTrustC
 - Copy files
 <code>
 sudo cp ssl-bundle.crt /opt/bitnami/apache2/conf/
-sudo cp greenstone_digital.crt /opt/bitnami/apache2/conf/
 
+sudo cp greenstone_digital.crt /opt/bitnami/apache2/conf/
 </code>
 
 - Restart the server
